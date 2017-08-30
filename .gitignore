@@ -1,6 +1,10 @@
 
 # Created by https://www.gitignore.io/api/java,maven
 
+.classpath
+.project
+.settings/
+
 ### Java ###
 # Compiled class file
 *.class
