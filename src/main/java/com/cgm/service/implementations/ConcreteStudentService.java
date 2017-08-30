@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
+import com.cgm.main.Main;
 import com.cgm.service.contracts.StudentService;
 
 @Service("concreteStudentService")
@@ -12,11 +13,11 @@ import com.cgm.service.contracts.StudentService;
 public class ConcreteStudentService implements StudentService {
 
 	@Autowired
-	@Qualifier("consoleStudentService")
+	@Qualifier("loggerStudentService")
 	private StudentService studentService;
 	
 	public ConcreteStudentService() {
-		System.out.println("Constructor for ConcreteStudentService");
+		Main.logger.info("Constructor for ConcreteStudentService");
 	}
 	
 	@Override
