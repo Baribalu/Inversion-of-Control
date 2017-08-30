@@ -5,6 +5,8 @@
 	<artifactId>Inversion-of-Control</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Inversion-of-Conversion</name>
+	<packaging>jar</packaging>
+	<!-- <packaging>war</packaging> -->
 
 
 	<properties>
@@ -59,7 +61,17 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-		</plugins>
+			<!-- FOR WAR PACKAGING
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>WebContent</warSourceDirectory>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			-->
+	</plugins>
 	</build>
 
 </project>
