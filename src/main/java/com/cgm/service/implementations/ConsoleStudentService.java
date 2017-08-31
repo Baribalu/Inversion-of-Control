@@ -5,8 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.cgm.service.contracts.StudentService;
 
-@Service("consoleStudentService")
-@Scope("prototype")
+//@Service("consoleStudentService")
 public class ConsoleStudentService implements StudentService{
 	
 	public ConsoleStudentService() {
